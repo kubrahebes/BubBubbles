@@ -23,7 +23,10 @@
         </activity>
         <activity android:name=".LetStartActivity" />
         <activity android:name=".TestScreenActivity" />
-        <activity android:name=".SonucActivity"></activity>
+        <activity android:name=".SonucActivity"
+            >
+
+        </activity>
     </application>
 
 </manifest>

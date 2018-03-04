@@ -1,5 +1,6 @@
 package com.example.user.bubbubbles;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -35,7 +36,7 @@ public class TestScreenActivity extends AppCompatActivity {
     @BindView(R.id.bitis)
     Button bitis;
 
-
+    private ProgressDialog mProgress;
     private CardStack mCardStack;
 
     @Override
@@ -49,6 +50,12 @@ public class TestScreenActivity extends AppCompatActivity {
 
         mCardStack.setContentResource(R.layout.networking_card_content);
         Intent intent = getIntent();
+        mProgress = new ProgressDialog(TestScreenActivity.this);
+        mProgress.setTitle("Processing...");
+        mProgress.setMessage("Please wait...");
+        mProgress.setCancelable(true);
+        mProgress.setIndeterminate(true);
+        mProgress.show();
         secilenKategori = intent.getStringExtra("secilenKategori");
      //   Toast.makeText(this, secilenKategori, Toast.LENGTH_SHORT).show();
         if (secilenKategori.equals("meslek")) {
@@ -71,6 +78,7 @@ public class TestScreenActivity extends AppCompatActivity {
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+                mProgress.cancel();
                 ArrayList<Question> financeGoalList = new ArrayList<>();
                 for (DataSnapshot verigetir : dataSnapshot.getChildren()) {
                     //  mProgress.cancel();
@@ -166,6 +174,7 @@ public class TestScreenActivity extends AppCompatActivity {
     public void onViewClicked() {
 
         Intent intent = new Intent(TestScreenActivity.this, SonucActivity.class);
+        intent.putExtra("kategori",secilenKategori);
         startActivity(intent);
     }
 }
