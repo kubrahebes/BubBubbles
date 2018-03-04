@@ -9,16 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AnasayfaActivity">
+        <activity
+            android:name=".AnasayfaActivity"
+            android:theme="@style/anasayfa"></activity>
+        <activity
+            android:name=".SpleshActivity"
+            android:theme="@style/anasayfa">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SpleshActivity" />
         <activity android:name=".LetStartActivity" />
-        <activity android:name=".TestScreenActivity"></activity>
+        <activity android:name=".TestScreenActivity" />
+        <activity android:name=".SonucActivity"></activity>
     </application>
 
 </manifest>
