@@ -59,7 +59,7 @@ public class TestScreenActivity extends AppCompatActivity {
         secilenKategori = intent.getStringExtra("secilenKategori");
      //   Toast.makeText(this, secilenKategori, Toast.LENGTH_SHORT).show();
         if (secilenKategori.equals("meslek")) {
-            rl.setText("MESLEK");
+            rl.setText("Mesleğini Keşfet ");
         } else if (secilenKategori.equals("superKahraman")) {
             rl.setText("SUPER KAHRAMAN");
         } else {

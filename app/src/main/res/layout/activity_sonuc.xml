@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bacground"
+    android:background="@drawable/layer_46"
     tools:context="com.example.user.bubbubbles.SonucActivity">
 
     <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -48,7 +48,7 @@
         android:layout_marginTop="30dp"
         android:background="#29ffa2"
         android:padding="20dp"
-        android:text="AnaSayfaya Don"
+        android:text="Yeteneklerini Keşfetmeye Devam"
         android:textColor="#fff" />
 
 </RelativeLayout>
