@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -75,7 +76,7 @@ public class AnasayfaActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.meslek_rlt, R.id.superKahraman, R.id.superKahraman_rlt, R.id.yetenek_rlt})
+    @OnClick({R.id.meslek_rlt, R.id.superKahraman, R.id.superKahraman_rlt, R.id.yetenek_rlt, R.id.cardBos})
     public void onViewClicked(View view) {
 
         switch (view.getId()) {
@@ -90,9 +91,10 @@ public class AnasayfaActivity extends AppCompatActivity {
                 startActivity(intent2);
                 break;
             case R.id.yetenek_rlt:
-                Intent intent3 = new Intent(AnasayfaActivity.this, LetStartActivity.class);
-                intent3.putExtra("kategori", "yetenek");
-                startActivity(intent3);
+                Toast.makeText(this, "Su an aktif degil !!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.cardBos:
+                Toast.makeText(this, "Su an aktif degil !!", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

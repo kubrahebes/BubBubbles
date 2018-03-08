@@ -7,43 +7,31 @@
     android:background="@drawable/layer_46"
     tools:context="com.example.user.bubbubbles.SonucActivity">
 
-    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/cardView"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/image"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/aslan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/image"
+        android:id="@+id/sonuctxt"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@color/bacground"
-        app:cardBackgroundColor="#fefdd4"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="10dp">
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:text="denem"
+        android:textSize="20sp" />
 
-        <RelativeLayout
-            android:id="@+id/card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="299dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/sonuctxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:layout_marginTop="20dp"
-                android:text="denem"
-                android:textSize="20sp" />
-        </RelativeLayout>
-
-    </android.support.v7.widget.CardView>
 
     <Button
         android:id="@+id/anaSayfaDon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/cardView"
+        android:layout_below="@+id/sonuctxt"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:background="#29ffa2"
