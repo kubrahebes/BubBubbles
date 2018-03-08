@@ -1,43 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/layer_46"
+    android:background="#fefdd4"
     tools:context="com.example.user.bubbubbles.SonucActivity">
 
-    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/cardView"
-        android:layout_width="match_parent"
+
+    <ImageView
+        android:id="@+id/imgSonuc"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/maamun_1"/>
+
+    <TextView
+        android:id="@+id/sonuctxt"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@color/bacground"
-        app:cardBackgroundColor="#fefdd4"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="10dp">
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="denemmlkSLNdlk
+sdkfokvomdvankjnk
+vsdnkjn"
+        android:textColor="#0747AE"
+        android:textSize="18sp"
+        android:layout_below="@id/imgSonuc"
+        android:layout_marginTop="30dp"/>
 
-        <RelativeLayout
-            android:id="@+id/card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="299dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/sonuctxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:layout_marginTop="20dp"
-                android:text="denem"
-                android:textSize="20sp" />
-        </RelativeLayout>
-
-    </android.support.v7.widget.CardView>
 
     <Button
         android:id="@+id/anaSayfaDon"
@@ -45,10 +36,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/cardView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:background="#29ffa2"
-        android:padding="20dp"
-        android:text="Yeteneklerini Keşfetmeye Devam"
-        android:textColor="#fff" />
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:padding="14dp"
+        android:text="Keşfetmeye Devam Et"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"/>
 
 </RelativeLayout>

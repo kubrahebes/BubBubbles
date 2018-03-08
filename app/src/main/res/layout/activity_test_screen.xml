@@ -9,12 +9,11 @@
 
     <TextView
         android:id="@+id/rl"
-        android:textColor="#ffff"
-
+        android:textColor="#FEFF94"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20sp"
+        android:gravity="center"
         android:layout_marginTop="20dp"
         android:text="deneme"
         android:layout_centerHorizontal="true"
@@ -38,11 +37,11 @@
         android:textColor="#fff"
         android:padding="10dp"
         android:textSize="20sp"
-        android:background="@color/bacground"
+        android:background="@drawable/shape"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="36dp"
         android:text="Testi Bitir" />
 </RelativeLayout>
