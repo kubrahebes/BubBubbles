@@ -11,14 +11,13 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="28sp"
-        android:textColor="#fefdd4"
-        android:letterSpacing="0.01"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:textSize="24sp"
+        android:textColor="#FEFF94"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
+        android:gravity="center"
         android:id="@+id/text"
-        android:text="Keşif Yapmaya Kendınden Başla "
+        android:text="Keşif Yapmaya Kendınden\n Başla "
         />
     <LinearLayout
 
@@ -85,25 +84,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
                 android:id="@+id/superKahraman_rlt">
+
                 <ImageView
+                    android:id="@+id/superKahraman"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/superkahicon"
+                    android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
-                    android:id="@+id/superKahraman"/>
+                    android:background="@drawable/superkahicon" />
                 <TextView
                     android:id="@+id/tvkahraman"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="24sp"
-                    android:layout_below="@+id/superKahraman"
                     android:text="Süper \nKahraman"
                     android:gravity="center"
                     android:textColor="#fff"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="16dp"/>
+                    android:layout_marginBottom="36dp"/>
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>
@@ -134,14 +134,21 @@
             android:id="@+id/yetenek_rlt"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kilit"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="12dp"/>
 
             <ImageView
                 android:id="@+id/yetenek"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="22dp"
+               android:layout_alignParentTop="true"
+                android:layout_marginTop="50dp"
                 android:background="@drawable/yetenek" />
 
             <TextView
@@ -149,9 +156,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_below="@+id/yetenek"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="36dp"
                 android:gravity="center"
                 android:text="Yetenek"
                 android:textColor="#fff"
@@ -162,13 +168,24 @@
         android:id="@+id/cardBos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardBackgroundColor="#f12c6d"
+        app:cardBackgroundColor="#f84781"
         app:cardCornerRadius="9dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="5dp"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="5dp"
         android:layout_weight="2.">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kilit"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="12dp"/>
+        </RelativeLayout>
 
     </android.support.v7.widget.CardView>
 </LinearLayout>

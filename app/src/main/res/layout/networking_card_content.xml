@@ -37,6 +37,14 @@
             android:text="Buraya sorular gelmekte"
             android:textColor="#051532"
             android:textSize="20dp" />
+        <ImageView
+            android:id="@+id/imgSoru"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/superkahicon"/>
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -52,7 +60,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:text="Futbol2" />
+                    android:text="Futbol2"
+                    android:layout_marginTop="10dp"/>
 
 
 
@@ -62,7 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-
+                    android:layout_marginTop="10dp"
                     android:text="Futboll"
 
                     />
@@ -73,8 +82,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_below="@id/radio1"
-                    android:layout_marginTop="30dp"
-                    android:text="Futbol3"></RadioButton>
+                    android:text="Futbol3"
+                    android:layout_marginTop="10dp"></RadioButton>
 
 
 
@@ -85,8 +94,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:layout_marginTop="10dp"
-                    android:text="Futbol4" />
+                    android:text="Futbol4"
+                    android:layout_marginTop="10dp"/>
 
         </RadioGroup>
 

@@ -11,14 +11,13 @@
     android:layout_height="wrap_content"
     android:text="Hazır Mısın ? "
     android:textSize="32sp"
-    android:textColor="#ffffff"
+    android:textColor="#FEFF94"
     android:layout_centerHorizontal="true"
     android:layout_marginTop="25dp"
     android:id="@+id/text"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:background="@drawable/kumsaati"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
@@ -28,11 +27,10 @@
         android:layout_height="60dp"
         android:id="@+id/basla"
         android:text="Keşife Başla"
-
         android:textSize="22sp"
         android:textColor="#ffffff"
-        android:layout_marginBottom="20dp"
-        android:background="#29ffa2"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/shape"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
        />
