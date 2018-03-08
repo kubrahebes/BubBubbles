@@ -16,10 +16,12 @@
         android:background="@drawable/maamun_1"/>
 
     <TextView
+
         android:id="@+id/sonuctxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+
         android:gravity="center"
         android:text="denemmlkSLNdlk
 sdkfokvomdvankjnk
@@ -30,11 +32,12 @@ vsdnkjn"
         android:layout_marginTop="30dp"/>
 
 
+
     <Button
         android:id="@+id/anaSayfaDon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/cardView"
+        android:layout_below="@+id/sonuctxt"
         android:layout_centerHorizontal="true"
         android:background="@drawable/shape"
         android:gravity="center"

@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,7 +18,10 @@ public class SonucActivity extends AppCompatActivity {
     @BindView(R.id.sonuctxt)
     TextView sonucText;
     @BindView(R.id.anaSayfaDon)
+
     Button anasayfayaDon;
+    @BindView(R.id.image)
+    ImageView icon;
     SharedPreferences pref;
     SharedPreferences.Editor editor;
     String secilenKategori;
@@ -43,22 +47,26 @@ public class SonucActivity extends AppCompatActivity {
         // Toast.makeText(this, ""+dizi[1], Toast.LENGTH_SHORT).show();
         if (secilenKategori.equals("meslek")) {
             if (sayaca > sayacb && sayaca > sayacc && sayaca > sayacd) {
-                sonucText.setText("Avukat");
+                sonucText.setText(R.string.avukat);
+                icon.setBackgroundResource(R.drawable.avukat);
             } else if (sayacb > sayaca && sayacb > sayacc && sayacb > sayacd) {
-                sonucText.setText("Bilim Adami");
+                sonucText.setText(R.string.bilimAdami);
+                icon.setBackgroundResource(R.drawable.doktor);
             } else if (sayacc > sayaca && sayacc > sayacb && sayacc > sayacd) {
-                sonucText.setText("Grisimci");
+                sonucText.setText(R.string.girisimci);
             } else if (sayacd > sayaca && sayacd > sayacb && sayacd > sayacc) {
-                sonucText.setText("Muhendis");
+                sonucText.setText(R.string.muhendis);
+                icon.setBackgroundResource(R.drawable.muhendis);
 
             } else if (sayaca == 0 & sayacb == 0 && sayacc == 0 && sayacd == 0) {
                 sonucText.setText("Testi Cozmedin :/");
             }
-        } else if (sayaca == sayacb && sayaca == sayacc && sayaca == sayacd) {
-            sonucText.setText("");
-
-
-        } else if (secilenKategori.equals("superKahraman")) {
+        } else if (sayaca == sayacb) {
+            sonucText.setText(R.string.doktor);
+        } else if (sayaca == sayacc) {
+            sonucText.setText(R.string.ogretmen);
+        }
+        else if (secilenKategori.equals("superKahraman")) {
             if (sayaca > sayacb && sayaca > sayacc && sayaca > sayacd) {
                 sonucText.setText("Moana");
             } else if (sayacb > sayaca && sayacb > sayacc && sayacb > sayacd) {
@@ -68,19 +76,16 @@ public class SonucActivity extends AppCompatActivity {
             } else {
                 sonucText.setText("Elena");
             }
-        } else if (sayaca == sayacb ) {
-            sonucText.setText("");
-        }
-        else if (sayaca==sayacc){
-
-        }
-        else if (sayacd==sayacc){
-
-        }
-
-        else if (sayaca == 0 & sayacb == 0 && sayacc == 0 && sayacd == 0) {
+        } else if (sayaca == 0 & sayacb == 0 && sayacc == 0 && sayacd == 0) {
             sonucText.setText("Testi Cozmedin :/");
+        } else if (sayaca == sayacb) {
+            sonucText.setText("");
+        } else if (sayaca == sayacc) {
+
+        } else if (sayacd == sayacc) {
+
         }
+
 
         Toast.makeText(this, "" + dizi[0], Toast.LENGTH_SHORT).show();
     }

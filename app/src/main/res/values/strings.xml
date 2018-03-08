@@ -5,4 +5,43 @@
     <string name="really_quit">The Connection is unavailable, Would you like to quit ?</string>
     <string name="quit">Quit</string>
     <string name="no">No</string>
+    <string name="avukat">Yeni dunyanin adalet saglayicilarindan olacaksin!
+Cok sanslisin cocukluk hayalim demeden imdadina biz yetistik. Simdi uslu bir cocuk ol ve annenin ders calis yavruuum nidalarina kulak ver.
+Hukuk dunyasi seni bekliyor.
+Basari dolu hayatin adliye saraylarindan geciyor.
+Iyi bir avukat olmak için cok oku oku oku cok oku cok anlat.
+Sana guveniyoruz.</string>
+
+    <string name="girisimci">Uzay caginin girisimci cocugusun!
+Buldugun tüm pratik fikirler, kurdugun hayaller bir gün tüm dunyaya yayilacak.
+Ama sakin anneni uzme ve ders calis
+Iyi bir girisimci cok arastirir cok gezer ve sorunlara cozumler uretir.
+Buyumeni heycanla bekliyoruz.</string>
+    <string name="bilimAdami">Bilim dunyasinin beklenen dehasi!
+Sinifin en caliskani oldugunu biliyoruz.
+Derslerine cok calismaya devam.
+Hayalini kurdugun başarılar laboratuvar ve kitaplarin arasinda sakli Sen onlari coktan kesfettin
+Iyi bir bilim insani insanlarin yararini cokca dusunen ve cokca calisandir
+Bizim için uretecegin icatlarinin mutlulugunu simdiden yaziyoruz.</string>
+
+    <string name="muhendis">Gelecegin hesaplamalari senden sorulur !
+Demekki kurcaladigin kumandalar bozdugun oyuncaklar hep muhendis genlerindenmis
+En mutlu oldugun anın bozulacak bir makina Buldugun an oldugunu biliyoruz
+Sen yinede anneni dinle ders calis
+Dersleri zayif bir muhendis olmayacagini soylemeye gerek yok
+Iyi bir muhendis sorunlara en akilci cozumu bulan kişidir bunun için teknik kitaplar oku ve arastirmalara Asla son verme
+Harika isler yaptiginda mutlaka goruselim</string>
+
+    <string name="doktor">Doktor derdime bir çare cumlesindeki Doktor Sen Olacaksin!
+Insan vucuduna olan hayranligin ve yardim etme arzun basarilarinjn hastaneden gececegini soyluyor.
+Teknolojik gelismeler sayesinde belki nobetlerden kurtulursun:)
+Ders calismaya sakin Ara verme
+Iyi bir Doktor surekli arastiran teknolojik gelismeleri takip eden, insanliga fayda saglamaya calisandir.
+Umarim gorusuruz ama hasta olmadan :)
+</string>
+    <string name="ogretmen">Gelecek nesilin kurtaricisi sensin!
+Sinav zamani tüm arkadaslarinin etrafini sarmasi tesaduf degil
+Derslerine daha cok calisman gerekecek cunku iyi bir ogretmen ogrencilerine en guvenilir bilgiye veren
+ hayata hazirlayan onemli bir birimdir.
+Ogrencilerin sana nasil bir takma isim takacak Kim Bilir :)</string>
 </resources>
