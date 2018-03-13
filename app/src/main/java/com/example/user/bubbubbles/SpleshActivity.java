@@ -16,8 +16,9 @@ public class SpleshActivity extends AppCompatActivity {
             public void run() {
                Intent intent=new Intent(SpleshActivity.this,AnasayfaActivity.class);
                startActivity(intent);
+               finish();
             }
-        },3000);
+        },2500);
 
     }
 }

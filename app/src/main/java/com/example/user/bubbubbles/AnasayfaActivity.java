@@ -84,17 +84,26 @@ public class AnasayfaActivity extends AppCompatActivity {
                 Intent intent = new Intent(AnasayfaActivity.this, LetStartActivity.class);
                 intent.putExtra("kategori", "meslek");
                 startActivity(intent);
+
                 break;
             case R.id.superKahraman_rlt:
+                Intent intent3 = new Intent(AnasayfaActivity.this, LetStartActivity.class);
+                intent3.putExtra("kategori", "kiz");
+                startActivity(intent3);
+
+
+                break;
+            case R.id.yetenek_rlt:
                 Intent intent2 = new Intent(AnasayfaActivity.this, LetStartActivity.class);
                 intent2.putExtra("kategori", "superKahraman");
                 startActivity(intent2);
-                break;
-            case R.id.yetenek_rlt:
-                Toast.makeText(this, "Su an aktif degil !!", Toast.LENGTH_SHORT).show();
+
+
                 break;
             case R.id.cardBos:
+
                 Toast.makeText(this, "Su an aktif degil !!", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Su an aktif degil !!", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
