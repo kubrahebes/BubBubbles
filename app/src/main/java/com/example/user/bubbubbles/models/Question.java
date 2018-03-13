@@ -11,49 +11,25 @@ public class Question {
     private String answer3;
     private String answer4;
     private String key;
-    private String id;
+    private String kategori;
 
-    public Question(String question, String answer1, String answer2, String answer3, String answer4, String key, String id) {
+    public Question(String question, String answer1, String answer2, String answer3, String answer4, String key, String kategori) {
         this.question = question;
         this.answer1 = answer1;
         this.answer2 = answer2;
         this.answer3 = answer3;
         this.answer4 = answer4;
         this.key = key;
-        this.id = id;
+        this.kategori = kategori;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public Question(String question, String answer1, String answer2, String answer3, String answer4, String id) {
+    public Question(String question, String answer1, String answer2, String answer3, String answer4, String kategori) {
         this.question = question;
         this.answer1 = answer1;
         this.answer2 = answer2;
         this.answer3 = answer3;
         this.answer4 = answer4;
-        this.id = id;
-    }
-
-    public Question(String question, String answer1, String answer2, String answer3, String answer4) {
-        this.question = question;
-        this.answer1 = answer1;
-        this.answer2 = answer2;
-        this.answer3 = answer3;
-        this.answer4 = answer4;
-    }
-
-    public String getKey() {
-        return key;
-    }
-
-    public void setKey(String key) {
-        this.key = key;
+        this.kategori = kategori;
     }
 
     public Question() {
@@ -97,5 +73,21 @@ public class Question {
 
     public void setAnswer4(String answer4) {
         this.answer4 = answer4;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
+    public String getKategori() {
+        return kategori;
+    }
+
+    public void setKategori(String kategori) {
+        this.kategori = kategori;
     }
 }

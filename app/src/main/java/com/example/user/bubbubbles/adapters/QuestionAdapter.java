@@ -34,52 +34,40 @@ public class QuestionAdapter extends ArrayAdapter<Question> {
         super(context, 0, androidFlavors);
     }
 
-     static int sayaca, sayacb, sayacd, sayacc;
+    static int sayaca, sayacb, sayacd, sayacc;
     SharedPreferences pref;
     SharedPreferences.Editor editor;
+    Question currentGoal;
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        ViewHolder holder;
+        final ViewHolder holder;
         pref = getContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
         editor = pref.edit();
         sayaca = pref.getInt("SayacA", 0);
         sayacb = pref.getInt("SayacB", 0);
         sayacc = pref.getInt("SayacC", 0);
         sayacd = pref.getInt("SayacD", 0);
-       // Toast.makeText(getContext(), ""+sayacc, Toast.LENGTH_SHORT).show();
+        // Toast.makeText(getContext(), ""+sayacc, Toast.LENGTH_SHORT).show();
         convertView = LayoutInflater.from(getContext()).inflate(
                 R.layout.networking_card_content, parent, false);
         holder = new ViewHolder(convertView);
         convertView.setTag(holder);
-        Question currentGoal = getItem(position);
-
-
+        currentGoal = getItem(position);
+if (currentGoal.getKategori().equals("1")){
+    holder.sonuc.setBackgroundResource(R.drawable.meslekicon);
+}
+else {
+    holder.sonuc.setBackgroundResource(R.drawable.superkahicon);
+}
 
         holder.tvsoru.setText(currentGoal.getQuestion());
         holder.radio1.setText(currentGoal.getAnswer1());
         holder.radio2.setText(currentGoal.getAnswer2());
         holder.radio3.setText(currentGoal.getAnswer3());
         holder.radio4.setText(currentGoal.getAnswer4());
-        if (currentGoal.getId().equals("1")) {
 
-        } else if (currentGoal.getId().equals("2")) {
-
-
-        } else if (currentGoal.getId().equals("3")) {
-
-        } else if (currentGoal.getId().equals("4")) {
-
-        } else if (currentGoal.getId().equals("5")) {
-
-        } else if (currentGoal.getId().equals("6")) {
-
-        } else if (currentGoal.getId().equals("7")) {
-
-
-        }
-        //int selectedId = holder.radiogroup.getCheckedRadioButtonId();
 
         holder.radiogroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -87,27 +75,33 @@ public class QuestionAdapter extends ArrayAdapter<Question> {
                     case R.id.radio1:
                         sayaca++;
                         editor.putInt("SayacA", sayaca);
+
                         editor.commit();
-                       // Toast.makeText(getContext(), "Radio1", Toast.LENGTH_SHORT).show();
+                        // Toast.makeText(getContext(), "Radio1", Toast.LENGTH_SHORT).show();
                         // do operations specific to this selection
                         break;
                     case R.id.radio2:
+                        String tubaa = holder.radio1.getText().toString();
+                        if (tubaa.equals("Erkek")) {
+                            editor.putString("cinsiyet", "erkek");
+                            editor.commit();
+                        }
                         sayacb++;
                         editor.putInt("SayacB", sayacb);
                         editor.commit();
-                    //    Toast.makeText(getContext(), "Radio2", Toast.LENGTH_SHORT).show();
+                        //    Toast.makeText(getContext(), "Radio2", Toast.LENGTH_SHORT).show();
                         // do operations specific to this selection
                         break;
                     case R.id.radio3:
                         sayacc++;
-                       // Toast.makeText(getContext(), "" + sayacc, Toast.LENGTH_SHORT).show();
+                        // Toast.makeText(getContext(), "" + sayacc, Toast.LENGTH_SHORT).show();
                         editor.putInt("SayacC", sayacc);
-                       // editor.putInt("SayacD", sayacd);
+                        // editor.putInt("SayacD", sayacd);
                         editor.commit();
                         // do operations specific to this selection
                         break;
                     case R.id.radio4:
-                      //  Toast.makeText(getContext(), "Radio4", Toast.LENGTH_SHORT).show();
+                        //  Toast.makeText(getContext(), "Radio4", Toast.LENGTH_SHORT).show();
                         sayacd++;
                         editor.putInt("SayacD", sayacd);
                         editor.commit();
@@ -137,8 +131,9 @@ public class QuestionAdapter extends ArrayAdapter<Question> {
         RadioButton radio3;
 
         @BindView(R.id.radio4)
-
         RadioButton radio4;
+        @BindView(R.id.imgSoru)
+        ImageView sonuc;
         @BindView(R.id.card)
         RelativeLayout card;
         @BindView(R.id.cardView)

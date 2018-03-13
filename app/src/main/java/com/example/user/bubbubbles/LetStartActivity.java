@@ -37,6 +37,7 @@ public class LetStartActivity extends AppCompatActivity {
         Intent intent = new Intent(LetStartActivity.this, TestScreenActivity.class);
         intent.putExtra("secilenKategori", gelenKategori);
         startActivity(intent);
+        finish();
     }
 
     public String getKategori() {
@@ -49,7 +50,7 @@ public class LetStartActivity extends AppCompatActivity {
             gecis = "superKahraman";
 
         } else {
-            gecis = "yetenek";
+            gecis = "kiz";
         }
         return gecis;
     }

@@ -13,7 +13,17 @@
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:background="@drawable/maamun_1"/>
+        android:background="@drawable/moana"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/baslik"
+        android:text="denemeee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:textSize="20sp"
+        android:textColor="#0747AE"
+        android:layout_below="@+id/imgSonuc"/>
 
     <TextView
 
@@ -21,15 +31,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-
         android:gravity="center"
         android:text="denemmlkSLNdlk
 sdkfokvomdvankjnk
 vsdnkjn"
         android:textColor="#0747AE"
         android:textSize="18sp"
-        android:layout_below="@id/imgSonuc"
-        android:layout_marginTop="30dp"/>
+        android:layout_below="@id/baslik"
+        android:layout_marginTop="10dp"/>
 
 
 
@@ -37,7 +46,7 @@ vsdnkjn"
         android:id="@+id/anaSayfaDon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/sonuctxt"
+
         android:layout_centerHorizontal="true"
         android:background="@drawable/shape"
         android:gravity="center"

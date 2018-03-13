@@ -38,7 +38,7 @@ public class TestScreenActivity extends AppCompatActivity {
 
     private ProgressDialog mProgress;
     private CardStack mCardStack;
-
+String tableName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,12 +61,17 @@ public class TestScreenActivity extends AppCompatActivity {
         if (secilenKategori.equals("meslek")) {
             rl.setText("Mesleğini Keşfet ");
         } else if (secilenKategori.equals("superKahraman")) {
-            rl.setText("SUPER KAHRAMAN");
+            rl.setText("SUPER  ERKEK KAHRAMAN");
         } else {
-            rl.setText("YETENEGINI KESFET");
+            rl.setText("SUPER KADIN KAHRAMAN  ");
+        }
+        if (secilenKategori.equals("meslek")){
+            tableName="meslek";
+        }else {
+            tableName="superKahraman";
         }
         database = FirebaseDatabase.getInstance();
-        myRef = database.getReference("database").child(secilenKategori);
+        myRef = database.getReference("database").child(tableName);
         getdata();
     }
 
@@ -111,7 +116,7 @@ public class TestScreenActivity extends AppCompatActivity {
 
         questionAdapter = new QuestionAdapter(this, goal);
         for (int i = 0; i < list.size(); i++) {
-            questionAdapter.add(new Question(list.get(i).getQuestion(), list.get(i).getAnswer1(), list.get(i).getAnswer2(), list.get(i).getAnswer3(), list.get(i).getAnswer4(), list.get(i).getId()));
+            questionAdapter.add(new Question(list.get(i).getQuestion(), list.get(i).getAnswer1(), list.get(i).getAnswer2(), list.get(i).getAnswer3(), list.get(i).getAnswer4(), list.get(i).getKategori()));
         }
         mCardStack.setAdapter(questionAdapter);
         // mCardStack.setEnableLoop(!mCardStack.isEnableLoop());
@@ -176,5 +181,6 @@ public class TestScreenActivity extends AppCompatActivity {
         Intent intent = new Intent(TestScreenActivity.this, SonucActivity.class);
         intent.putExtra("kategori",secilenKategori);
         startActivity(intent);
+        finish();
     }
 }
