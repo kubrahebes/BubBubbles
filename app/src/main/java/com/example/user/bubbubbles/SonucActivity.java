@@ -13,12 +13,15 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import com.google.android.gms.ads.*;
 
 public class SonucActivity extends AppCompatActivity {
+
     int sayaca;
     int sayacb;
     int sayacd;
     int sayacc;
+
     String cinsiyet;
     @BindView(R.id.sonuctxt)
     TextView sonucText;
@@ -38,6 +41,8 @@ public class SonucActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sonuc);
         ButterKnife.bind(this);
+
+
 
         Intent intent = getIntent();
         secilenKategori = intent.getStringExtra("kategori");
@@ -212,4 +217,8 @@ public class SonucActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-}
+
+
+
+    }
+
