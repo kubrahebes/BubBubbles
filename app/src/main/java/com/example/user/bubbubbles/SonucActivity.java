@@ -49,9 +49,9 @@ public class SonucActivity extends AppCompatActivity {
         sayacb = pref.getInt("SayacB", 0);
         sayacc = pref.getInt("SayacC", 0);
         sayacd = pref.getInt("SayacD", 0);
-      //  cinsiyet = pref.getString("cinsiyet", "");
-      //  Toast.makeText(this, "" + cinsiyet, Toast.LENGTH_SHORT).show();
-      //  int dizi[] = {sayaca, sayacb, sayacc, sayacd};
+        //  cinsiyet = pref.getString("cinsiyet", "");
+        //  Toast.makeText(this, "" + cinsiyet, Toast.LENGTH_SHORT).show();
+        //  int dizi[] = {sayaca, sayacb, sayacc, sayacd};
         // Toast.makeText(this, ""+dizi[1], Toast.LENGTH_SHORT).show();
         if (secilenKategori.equals("meslek")) {
             if (sayaca > sayacb && sayaca > sayacc && sayaca > sayacd) {
@@ -127,11 +127,11 @@ public class SonucActivity extends AppCompatActivity {
             } else if (sayaca == sayacb || sayacb == sayacd) {
                 sonucText.setText(R.string.Pokahontas);
                 baslik.setText("POKAHONTAS");
-                icon.setBackgroundResource(R.drawable.moana);
+                icon.setBackgroundResource(R.drawable.pokahontas);
             } else if (sayaca == sayacd || sayacc == sayacd) {
                 sonucText.setText(R.string.kediKadin);
                 baslik.setText("KEDI KADIN");
-                icon.setBackgroundResource(R.drawable.elsa);
+                icon.setBackgroundResource(R.drawable.kedi_kiz);
             } else if (sayaca == sayacc || sayacb == sayacc) {
                 sonucText.setText(R.string.elena);
                 icon.setBackgroundResource(R.drawable.elena);
@@ -141,9 +141,9 @@ public class SonucActivity extends AppCompatActivity {
                 baslik.setText("PAMUK PRENSES");
                 icon.setBackgroundResource(R.drawable.pamukprenses);
             } else if (sayacb == sayacc && sayacb == sayacd || sayacd == sayaca && sayacd == sayacb) {
-                sonucText.setText(R.string.girisimci);
-                icon.setBackgroundResource(R.drawable.girisimci);
-                baslik.setText("GIRISIMCI");
+                sonucText.setText(R.string.Pokahontas);
+                icon.setBackgroundResource(R.drawable.pokahontas);
+                baslik.setText("POKAHONTAS");
             } else {
                 sonucText.setText(R.string.pamukPrenses);
                 baslik.setText("PAMUK PRENSES");
@@ -159,7 +159,7 @@ public class SonucActivity extends AppCompatActivity {
                 sonucText.setText(R.string.joker);
                 baslik.setText("JOKER");
                 icon.setBackgroundResource(R.drawable.joker);
-            } else if (sayacc >sayaca && sayacc > sayacb && sayacc > sayacd) {
+            } else if (sayacc > sayaca && sayacc > sayacb && sayacc > sayacd) {
                 sonucText.setText(R.string.batman);
                 baslik.setText("BATMAN");
                 icon.setBackgroundResource(R.drawable.batman);
@@ -174,13 +174,13 @@ public class SonucActivity extends AppCompatActivity {
                 icon.setVisibility(View.GONE);
 
             } else if (sayaca == sayacb || sayacb == sayacd) {
-                sonucText.setText(R.string.ironman);
-                baslik.setText("IRONMAN");
-                icon.setBackgroundResource(R.drawable.dem_radam);
+                sonucText.setText(R.string.hulk);
+                baslik.setText("HULK");
+                icon.setBackgroundResource(R.drawable.hulk);
             } else if (sayaca == sayacd || sayacc == sayacd) {
-                sonucText.setText(R.string.orumcekAdam);
-                baslik.setText("ORUMCEK ADAM");
-                icon.setBackgroundResource(R.drawable.orumcek);
+                sonucText.setText(R.string.captanAmerika);
+                baslik.setText("KAPTAN AMERIKA");
+                icon.setBackgroundResource(R.drawable.kaptan_amerika);
             } else if (sayaca == sayacc || sayacb == sayacc) {
                 sonucText.setText(R.string.batman);
                 icon.setBackgroundResource(R.drawable.batman);
@@ -190,9 +190,9 @@ public class SonucActivity extends AppCompatActivity {
                 baslik.setText("JOKER");
                 icon.setBackgroundResource(R.drawable.joker);
             } else if (sayacb == sayacc && sayacb == sayacd || sayacd == sayaca && sayacd == sayacb) {
-                sonucText.setText(R.string.joker);
-                icon.setBackgroundResource(R.drawable.joker);
-                baslik.setText("JOKER");
+                sonucText.setText(R.string.hulk);
+                icon.setBackgroundResource(R.drawable.hulk);
+                baslik.setText("HULKL");
             } else {
                 sonucText.setText(R.string.orumcekAdam);
                 baslik.setText("ORUMCEK ADAM");
