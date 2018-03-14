@@ -5,73 +5,77 @@
     <string name="really_quit">The Connection is unavailable, Would you like to quit ?</string>
     <string name="quit">Quit</string>
     <string name="no">No</string>
-    <string name="avukat">Yeni dunyanin adalet saglayicilarindan olacaksin!
-Cok sanslisin cocukluk hayalim demeden imdadina biz yetistik. Simdi uslu bir cocuk ol ve annenin ders calis yavruuum nidalarina kulak ver.
-Hukuk dunyasi seni bekliyor.
-Basari dolu hayatin adliye saraylarindan geciyor.
-Iyi bir avukat olmak için cok oku oku oku cok oku cok anlat.
-Sana guveniyoruz.</string>
+    <string name="avukat">Yeni dünyanın adalet saglayıcılarından olacaksın!
+Çok șanslısın çocukluk hayalim demeden imdadına biz yetiștik. Șimdi uslu bir çocuk ol ve annenin ders çalıș yavruuum nidalarına kulak ver.
+Hukuk dünyası seni bekliyor.
+Bașari dolu hayatın adliye saraylarından geçiyor.
+Iyi bir avukat olmak için çok oku oku oku çok oku çok anlat.
+Sana güveniyoruz.</string>
 
-    <string name="girisimci">Uzay caginin girisimci cocugusun!
-Buldugun tüm pratik fikirler, kurdugun hayaller bir gün tüm dunyaya yayilacak.
-Ama sakin anneni uzme ve ders calis
-Iyi bir girisimci cok arastirir cok gezer ve sorunlara cozumler uretir.
-Buyumeni heycanla bekliyoruz.</string>
-    <string name="bilimAdami">Bilim dunyasinin beklenen dehasi!
-Sinifin en caliskani oldugunu biliyoruz.
-Derslerine cok calismaya devam.
-Hayalini kurdugun başarılar laboratuvar ve kitaplarin arasinda sakli Sen onlari coktan kesfettin
-Iyi bir bilim insani insanlarin yararini cokca dusunen ve cokca calisandir
-Bizim için uretecegin icatlarinin mutlulugunu simdiden yaziyoruz.</string>
+    <string name="girisimci">Uzay çagının girişimci çocuğusun!
+Bulduğun tüm pratik fikirler, kurduğun hayaller bir gün tüm dünyaya yayılacak.
+Ama sakın anneni üzme ve ders calıș
+Iyi bir girișimci çok araștırır çok gezer ve sorunlara çözümler üretir.
+Büyümeni heycanla bekliyoruz.</string>
+    <string name="bilimAdami">Bilim dünyasının beklenen dehası!
+Sınıfın en çalışkanı olduğunu biliyoruz.
+Derslerine çok çalıșmaya devam.
+Hayalini kurduğun başarılar laboratuvar ve kitapların arasında saklı Sen onları çoktan kesfettin
+Iyi bir bilim insanı insanların yararını çokca düșünen ve çokça çalıșandır
+Bizim için üreteceğin icatların mutluluğunu șimdiden yașıyoruz.</string>
 
-    <string name="muhendis">Gelecegin hesaplamalari senden sorulur !
-Demekki kurcaladigin kumandalar bozdugun oyuncaklar hep muhendis genlerindenmis
-En mutlu oldugun anın bozulacak bir makina Buldugun an oldugunu biliyoruz
-Sen yinede anneni dinle ders calis
-Dersleri zayif bir muhendis olmayacagini soylemeye gerek yok
-Iyi bir muhendis sorunlara en akilci cozumu bulan kişidir bunun için teknik kitaplar oku ve arastirmalara Asla son verme
-Harika isler yaptiginda mutlaka goruselim</string>
+    <string name="muhendis">Geleceğin hesaplamaları senden sorulur !
+Demekki kurcaladığın kumandaların bozduğun oyuncakların nedeni hep muhendis genlerinmiș
+En mutlu olduğun anın bozulacak bir makine bulduğun an olduğunu biliyoruz
+Sen yinede anneni dinle ders çalıș
+Dersleri zayıf bir muhendis olmayacağını söylemeye gerek yok
+Iyi bir muhendis sorunlara en akılcı çözümü bulan kişidir. Bunun için teknik kitaplar oku ve araștırmalara asla son verme
+Harika ișler yaptığında mutlaka görüșelim
 
-    <string name="doktor">Doktor derdime bir çare cumlesindeki Doktor Sen Olacaksin!
-Insan vucuduna olan hayranligin ve yardim etme arzun basarilarinjn hastaneden gececegini soyluyor.
-Teknolojik gelismeler sayesinde belki nobetlerden kurtulursun:)
-Ders calismaya sakin Ara verme
-Iyi bir Doktor surekli arastiran teknolojik gelismeleri takip eden, insanliga fayda saglamaya calisandir.
-Umarim gorusuruz ama hasta olmadan :)
 </string>
-    <string name="ogretmen">Gelecek neslin kurtaricisi sensin!
-Sinav zamani tüm arkadaslarinin etrafini sarmasi tesaduf degil
-Derslerine daha cok calisman gerekecek cunku iyi bir ogretmen ogrencilerine en guvenilir bilgiye veren
- hayata hazirlayan onemli bir birimdir.
-Ogrencilerin sana nasil bir takma isim takacak Kim Bilir :)</string>
+
+    <string name="doktor">Doktor derdime bir çare cümlesindeki Doktor Sen Olacaksın!
+Insan vücuduna olan hayranlığın ve yardım etme arzun basarılarının hastaneden geçeceğini söylüyor .
+Teknolojik gelismeler sayesinde belki nöbetlerden kurtulursun:)
+Ders calismaya sakin Ara verme
+Iyi bir Doktor surekli arastıran teknolojik gelismeleri takip eden, insanlığa fayda sağlamaya çalışandır.
+Umarim görüșürüz ama hasta olmadan :)
+</string>
+    <string name="ogretmen">Gelecek nesilin kurtarıcısı sensin!
+Sınav zamanı tüm arkadaslarının etrafinı sarması tesadüf değil
+Derslerine daha çok çalıșman gerekecek çünku iyi bir ögretmen ögrencilerine en güvenilir bilgiyi veren
+ hayata hazırlayan onemli bir birimdir.
+Ögrencilerin sana nasıl bir takma isim takacak Kim Bilir :)
+</string>
     <string name="pamukPrenses">Yuzyillarin en pamuk kalpli prensesi!
 Asil, iyilik pesinde, guzeller guzeli prenses.
 Aynaya milyonlarca kez sorulsada cevabi hep Sen olacaksin!
 Ama kirlarda dolasmak yerine Luna parklarda eglenmeyi dene orda kotu kalpli kraliceler yok:)</string>
-    <string name="moana">Buralarin en cesuru Kim dediklerinde tüm gozler sana cevriliyor.
-        Sadece cesur degil kararindan donmeyen tatli bir savascisin ok at balik tut bu enerjiyle baska turlu bașa cikamazsin. D</string>
+    <string name="moana">Buraların en cesuru Kim dediklerinde tüm gözler sana çevriliyor.
+        Sadece cesur degil kararından dönmeyen tatlı bir savașçısın ok at balık tut bu enerjiyle başka türlü bașa çıkamazsın. D</string>
 
-    <string name="elsa">Gercek bir karlar kralicesisin!
-Ozel gucleri olan agresif bir kralice
-Narin kalbini biz gorebiliyoruz ama diger insanlara da sans ver.
-Takim oyunlarina daha sık katil ozel guclerini herkes gorsun:)</string>
+    <string name="elsa">Gerçek bir karlar kraliçesisin!
+Özel guçleri olan agresif bir kraliçe
+Narin kalbini biz görebiliyoruz ama diğer insanlara da sans ver.
+Takım oyunlarına daha sık katıl özel güçlerini herkes görsün:)</string>
     <string name="elena">Iștee prensess elenaaa!
-Saskin iyi kalpli prenses maceralarin hep hayatinda olmasini istesende Asıl macera sensin, senin Hayal gucun.
-Bir suru hikayeler oku daha cok hayal kur herkese anlat.
-Bizim macera dolu dunyanda unutma.</string>
-    <string name="batman">Karizmanin guc bulmus Hali. Hem guclu hem guclu hem iyi hem guclu demis miydim.
-Geceleri karanligin kotuluklerini dunyadan savusturuyosun
-Ama yinede biraz sakinlesmeyi dene bisikletle gezintiye cik mesela :)</string>
-    <string name="orumcekAdam">Gizli kahraman orumcek adam
-Hayat kurtarmak bazen aglarla binalara tirmanmaktan daha zor.
-Ama Sen kahraman olmaktan hic vazgecme. Kotulukler senden korksun. Jimnastik kursuna katil ağlarini iskalamazsin ne dersin? :)</string>
+Șașkın iyi kalpli prenses maceraların hep hayatında olmasını istesende Asıl macera sensin, senin Hayal gücün.
+Bir sürü hikayeler oku daha çok hayal kur herkese anlat.
+Bizi macera dolu dünyanda unutma.</string>
+    <string name="batman">Karizmanın guç bulmuș hali. Hem güçlü hem güçlü hem iyi hem güçlü demiș miydim?
+Geceleri karanlığın kötülüklerini dünyadan savușturuyorsun
+Ama yinede biraz sakinleșmeyi dene bisikletle gezintiye çık mesela :)</string>
+    <string name="orumcekAdam">Gizli kahraman örümcek adam
+Hayat kurtarmak bazen ağlarla binalara tırmanmaktan daha zor.
+Ama Sen kahraman olmaktan hiç vazgeçme. Kötülükler senden korksun. Jimnastik kursuna katıl ağlarını ıskalamazsın ne dersin? :)</string>
     <string name="joker">
-Hayir Sen kotu degilsin sadece yuzun biraz boyali. Kimseler o boyalarin altindaki tatli bakislari gormesede biz goruyoruz.
-        Biraz gulumse cunku kotuler hep kaybeder Takim oyunlarina daha cok katıl eglenmeyi unutma</string>
-    <string name="ironman">Efsanelerin adami aramizda!
+
+Hayır Sen kötü değilsin sadece yüzün biraz boyalı. Kimseler o boyaların altındaki tatlı bakıșları görmese de biz görüyoruz.
+        Biraz gülümse çünku kötüler hep kaybeder Takım oyunlarına daha çok katıl eglenmeyi unutma</string>
+    <string name="ironman">Efsanelerin adamı aramızda!
 Șu parlak șeye bir kez dokunabilir miyiz
-Zeka kupu takimlarin aranan adami teknolojinin en iyi tarafi șu ukalaligin olmasa cok tatlisin
-Arkadaslarinla bulusmalari ihmal etme</string>
+Zeka küpü takımların aranan adamı teknolojinin en iyi tarafi șu ukalalığın olmasa cok tatlısın
+Arkadașlarınla bulușmaları ihmal etme</string>
     <string name="captanAmerika">Hizli kararli savasci. Șu elindeki seyle gercekten ucabiliyor musun?
 Her takimin liderliğini ustlenmen ve başarıyla ustesinden gelmen dikkatleri ustune cekiyor biraz basariz ol istersen nazar degmesin.</string>
     <string name="kediKadin">Kedi kadiinn miirrrrr 😁
