@@ -21,6 +21,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+
+
 public class AnasayfaActivity extends AppCompatActivity {
     FirebaseDatabase database;
     DatabaseReference myRef;
@@ -106,5 +108,8 @@ public class AnasayfaActivity extends AppCompatActivity {
                 //Toast.makeText(this, "Su an aktif degil !!", Toast.LENGTH_SHORT).show();
                 break;
         }
+
+
     }
+
 }

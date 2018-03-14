@@ -6,12 +6,16 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.user.bubbubbles.adapters.QuestionAdapter;
 import com.example.user.bubbubbles.models.Question;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -25,7 +29,11 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+
 public class TestScreenActivity extends AppCompatActivity {
+
+    private InterstitialAd mInstertial;
+
     FirebaseDatabase database;
     DatabaseReference myRef;
     String secilenKategori;
@@ -44,6 +52,23 @@ String tableName;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_screen);
         ButterKnife.bind(this);
+
+        Button showButton=(Button)findViewById(R.id.Reklam);
+        showButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(mInstertial.isLoaded()){
+                    mInstertial.show();
+                }
+            }
+        });
+
+        mInstertial =new InterstitialAd(this);
+        mInstertial.setAdUnitId("ca-app-pub-9243400256168524/2193210193");
+        AdRequest request=new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        mInstertial.loadAd(request);
+
+
 
 
         mCardStack = (CardStack) findViewById(R.id.container);
