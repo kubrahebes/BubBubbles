@@ -62,9 +62,9 @@
                     android:layout_centerHorizontal="true"
                     android:text="Meslek"
                     android:layout_below="@+id/meslekIcon"
-                    android:textSize="24sp"
+                    android:textSize="20sp"
                     android:textColor="#fff"
-                    android:layout_marginTop="16dp"/>
+                    android:layout_marginTop="6dp"/>
 
             </RelativeLayout>
 
@@ -97,13 +97,13 @@
                     android:id="@+id/tvkahraman"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="24sp"
+                    android:textSize="20sp"
                     android:text="Kadin \nSüper \nKahraman"
                     android:gravity="center"
                     android:textColor="#fff"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="36dp"/>
+                    android:layout_marginBottom="30dp"/>
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>
@@ -147,13 +147,13 @@
                 android:id="@+id/tvkahraman2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:text="Erkek \nSüper \nKahraman"
                 android:gravity="center"
                 android:textColor="#fff"
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="36dp"/>
+                android:layout_marginBottom="30dp"/>
 
 
         </RelativeLayout>
@@ -198,7 +198,7 @@
                 android:gravity="center"
                 android:text="Yetenek"
                 android:textColor="#fff"
-                android:textSize="24sp" />
+                android:textSize="20sp" />
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>

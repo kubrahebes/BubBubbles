@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:background="@color/bacground"
     tools:context="com.example.user.bubbubbles.TestScreenActivity">
 
@@ -18,21 +18,19 @@
         android:background="#00000000"
         android:visibility="invisible"
         ads:adSize=" "
-        ads:adUnitId="ca-app-pub-9243400256168524/2193210193"
-         />
-
+        ads:adUnitId="ca-app-pub-9243400256168524/2193210193" />
 
 
     <TextView
         android:id="@+id/rl"
-        android:textColor="#FEFF94"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="deneme"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="deneme"
+        android:textColor="#FEFF94"
         android:textSize="20sp"
 
 
@@ -42,33 +40,39 @@
         android:id="@+id/container"
 
         android:layout_width="match_parent"
-        android:layout_height="360dp"
+        android:layout_height="330dp"
         android:layout_below="@+id/rl"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:padding="20dp" />
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/container"
-    android:layout_marginLeft="60dp"
-    android:layout_marginBottom="10dp"
 
-    />
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/container"
-    android:layout_marginRight="60dp"
-    android:layout_marginBottom="10dp"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="0dp"
 
-    android:layout_alignParentRight="true"/>
+        android:id="@+id/sag"
+        android:background="@drawable/ic_swipe"
+
+        />
+
+    <TextView
+        android:id="@+id/sol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/container"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/ic_swipe_2" />
 
     <Button
 
         android:id="@+id/bitis"
         android:layout_width="150dp"
-        android:layout_height="100dp"
+        android:layout_height="90dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="36dp"
