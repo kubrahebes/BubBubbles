@@ -13,48 +13,59 @@
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:background="@drawable/moana"/>
+        android:background="@drawable/moana" />
+
     <TextView
+        android:id="@+id/baslik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/baslik"
-        android:text="denemeee"
+        android:layout_below="@+id/imgSonuc"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:textSize="20sp"
+        android:text="denemeee"
         android:textColor="#0747AE"
-        android:layout_below="@+id/imgSonuc"/>
+        android:textSize="20sp" />
 
-    <TextView
-
-        android:id="@+id/sonuctxt"
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:text="denemmlkSLNdlk
+        android:layout_below="@id/baslik"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/sonuctxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="denemmlkSLNdlk
 sdkfokvomdvankjnk
 vsdnkjn"
-        android:textColor="#0747AE"
-        android:textSize="18sp"
-        android:layout_below="@id/baslik"
-        android:layout_marginTop="10dp"/>
+                android:textColor="#0747AE"
 
-
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/anaSayfaDon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/shape"
         android:gravity="center"
-        android:textSize="20sp"
         android:padding="14dp"
         android:text="Keşfetmeye Devam Et"
         android:textColor="#ffffff"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="24dp"/>
+        android:textSize="20sp" />
 
 </RelativeLayout>

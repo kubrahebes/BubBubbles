@@ -2,7 +2,6 @@ package com.example.user.bubbubbles;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -14,7 +13,6 @@ import android.widget.Toast;
 import com.example.user.bubbubbles.adapters.QuestionAdapter;
 import com.example.user.bubbubbles.models.Question;
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -32,6 +30,10 @@ import butterknife.OnClick;
 
 public class TestScreenActivity extends AppCompatActivity {
 
+    @BindView(R.id.sag)
+    TextView sag;
+    @BindView(R.id.sol)
+    TextView sol;
     private InterstitialAd mInstertial;
 
     FirebaseDatabase database;
@@ -46,29 +48,28 @@ public class TestScreenActivity extends AppCompatActivity {
 
     private ProgressDialog mProgress;
     private CardStack mCardStack;
-String tableName;
+    String tableName;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_screen);
         ButterKnife.bind(this);
 
-        Button showButton=(Button)findViewById(R.id.Reklam);
+        Button showButton = (Button) findViewById(R.id.Reklam);
         showButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(mInstertial.isLoaded()){
+                if (mInstertial.isLoaded()) {
                     mInstertial.show();
                 }
             }
         });
 
-        mInstertial =new InterstitialAd(this);
+        mInstertial = new InterstitialAd(this);
         mInstertial.setAdUnitId("ca-app-pub-9243400256168524/2193210193");
-        AdRequest request=new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        AdRequest request = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
         mInstertial.loadAd(request);
-
-
 
 
         mCardStack = (CardStack) findViewById(R.id.container);
@@ -82,7 +83,7 @@ String tableName;
         mProgress.setIndeterminate(true);
         mProgress.show();
         secilenKategori = intent.getStringExtra("secilenKategori");
-     //   Toast.makeText(this, secilenKategori, Toast.LENGTH_SHORT).show();
+        //   Toast.makeText(this, secilenKategori, Toast.LENGTH_SHORT).show();
         if (secilenKategori.equals("meslek")) {
             rl.setText("Mesleğini Keşfet ");
         } else if (secilenKategori.equals("superKahraman")) {
@@ -90,10 +91,10 @@ String tableName;
         } else {
             rl.setText("SUPER KADIN KAHRAMAN  ");
         }
-        if (secilenKategori.equals("meslek")){
-            tableName="meslek";
-        }else {
-            tableName="superKahraman";
+        if (secilenKategori.equals("meslek")) {
+            tableName = "meslek";
+        } else {
+            tableName = "superKahraman";
         }
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference("database").child(tableName);
@@ -113,7 +114,7 @@ String tableName;
                 for (DataSnapshot verigetir : dataSnapshot.getChildren()) {
                     //  mProgress.cancel();
                     value = verigetir.getValue(Question.class);
-                   // Toast.makeText(TestScreenActivity.this, value.getQuestion(), Toast.LENGTH_SHORT).show();
+                    // Toast.makeText(TestScreenActivity.this, value.getQuestion(), Toast.LENGTH_SHORT).show();
                     financeGoalList.add(value);
 
                 }
@@ -204,8 +205,20 @@ String tableName;
     public void onViewClicked() {
 
         Intent intent = new Intent(TestScreenActivity.this, SonucActivity.class);
-        intent.putExtra("kategori",secilenKategori);
+        intent.putExtra("kategori", secilenKategori);
         startActivity(intent);
         finish();
+    }
+
+    @OnClick({R.id.sag, R.id.sol})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.sag:
+                Toast.makeText(this, "karti saga surukleyin", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.sol:
+                Toast.makeText(this, "karti sola surukleyin", Toast.LENGTH_SHORT).show();
+                break;
+        }
     }
 }

@@ -14,7 +14,7 @@
         android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="299dp"
+        android:minHeight="259dp"
         android:orientation="vertical">
 
         <ImageView
@@ -28,7 +28,7 @@
             android:id="@+id/tvsoru"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="6dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="16dp"
@@ -36,7 +36,7 @@
             android:gravity="center"
             android:text="Buraya sorular gelmekte"
             android:textColor="#051532"
-            android:textSize="20dp" />
+            android:textSize="17dp" />
         <ImageView
             android:id="@+id/imgSoru"
             android:layout_width="100dp"
@@ -44,6 +44,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/superkahicon"/>
 
         <RadioGroup
@@ -61,7 +62,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:text="Futbol2"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginTop="7dp"/>
 
 
 
@@ -71,7 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:text="Futboll"
 
                     />
@@ -83,7 +84,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_below="@id/radio1"
                     android:text="Futbol3"
-                    android:layout_marginTop="10dp"></RadioButton>
+                    android:layout_marginTop="5dp"></RadioButton>
 
 
 
@@ -95,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:text="Futbol4"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginTop="5dp"/>
 
         </RadioGroup>
 
